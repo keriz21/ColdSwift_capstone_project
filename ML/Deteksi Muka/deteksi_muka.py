@@ -8,6 +8,9 @@ def capture_images():
     cap = cv2.VideoCapture(0)  # Buka webcam
     count = 0  # Counter untuk jumlah frame yang diambil
 
+    tombol = False
+    count = 0
+
     while True:
         ret, frame = cap.read()  # Baca frame dari webcam
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Konversi ke grayscale
@@ -15,6 +18,8 @@ def capture_images():
         # Deteksi wajah
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         
+        
+
         # Jika wajah terdeteksi
         if len(faces) > 0:
             # Ambil koordinat wajah pertama
@@ -31,13 +36,18 @@ def capture_images():
             
             # Simpan gambar jika tombol 'c' ditekan
             if cv2.waitKey(1) & 0xFF == ord('c'):
-                count += 1
-                cv2.imwrite(f'captured_{count}.jpg', face_crop)
-                print(f"Image {count} captured!")
+                tombol = not tombol
+                # count += 1
+                # cv2.imwrite(f'captured_{count}.jpg', face_crop)
+                # print(f"Image {count} captured!")
                 
-                # Ambil 100 frame
-                if count == 100:
-                    break
+                # # Ambil 100 frame
+                # if count == 100:
+                #     break
+            if tombol:
+                if count <= 100:
+                    cv2.imwrite(f'foto_{count}.jpg', face_crop)
+            
 
         # Keluar dari loop jika tombol 'q' ditekan
         if cv2.waitKey(1) & 0xFF == ord('q'):
