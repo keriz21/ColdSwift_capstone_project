@@ -14,7 +14,7 @@ import cv2
 
 # Inisialisasi classifier wajah
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-path = "ML/Deteksi Muka/DataSet/Reza/"
+path = "ML/Deteksi Muka/DataSet/Rouf/"
 # Fungsi untuk mengambil gambar
 def capture_images():
     cap = cv2.VideoCapture(0)  # Buka webcam
