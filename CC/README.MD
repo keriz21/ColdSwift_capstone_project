@@ -151,7 +151,7 @@
    message: 'Ticket purchased successfully'
 }
 
-8. Purchase a ticket
+9. Purchase a ticket
 - URL : http://localhost:5000/mytickets
 - Method : GET
 - Request Body : 
