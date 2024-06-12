@@ -11,7 +11,7 @@ import json
 class KTPInformation(object):
     def __init__(self):
         self.nik = ""
-
+        self.nama = ""
 class KTPOCR(object):
     def __init__(self, image_path):
         self.image_path = image_path
@@ -57,6 +57,10 @@ class KTPOCR(object):
                 word = word.split(':')
                 self.result.nik = self.word_to_number_converter(word[-1].replace(" ", ""))
                 continue
+            if "Nama" in word:
+              word = word.split(':')
+              self.result.nama = word[-1]
+              continue
 
     def pun_rem(self, text):
         punctuations = '''!()[]{}'"\<>?@#$%^&*_~'''
@@ -69,11 +73,11 @@ class KTPOCR(object):
         return no_punct
 
     def to_json(self):
-        return json.dumps({"nik": self.result.nik})
+        return json.dumps({"nik": self.result.nik, "nama": self.result.nama})
 
 if __name__ == "__main__":
     current_dir = os.path.dirname(__file__)
     FILE_PATH = os.path.join(current_dir, 'data_ktp/')
-    filePath = os.path.join(FILE_PATH, 'ktp4.jpg')
+    filePath = os.path.join(FILE_PATH, 'ktp1.png')
     images = KTPOCR(filePath)
     print(images.to_json())
