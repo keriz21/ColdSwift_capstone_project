@@ -5,8 +5,6 @@ const { nanoid } = require('nanoid');
 // const ImgUpload = require('../middleware/imageUpload');
 
 exports.addEvent = async (req, res) => {
-    console.log(req.body); // Log the request body for debugging
-    console.log(req.file); // Log the request file for debugging
     const { eventName,
         organizer,
         eventDate,

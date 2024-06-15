@@ -10,8 +10,10 @@ require('dotenv').config();
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json({ limit: '30mb' }));
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 
 Event.hasMany(Ticket, { foreignKey: 'eventId' });
 Ticket.belongsTo(Event, { foreignKey: 'eventId' });

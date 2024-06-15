@@ -2,7 +2,6 @@ const express = require('express');
 const { addEvent, getAllEvents, spesificEvent, purchaseTicket, getAllticket } = require('../controllers/ticketing');
 const auth = require('../middleware/auth');
 const router = express.Router();
-// const { purchaseTicket } = require('../controllers/userController');
 const Multer = require('multer')
 const ImgUpload = require('../middleware/imageUpload');
 
