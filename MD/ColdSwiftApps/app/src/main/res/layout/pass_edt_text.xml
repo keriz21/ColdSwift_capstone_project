@@ -1,0 +1,33 @@
+<!-- res/layout/pass_ed_text.xml -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@id/iv_toggle"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/halfwhite"
+        android:hint="@string/input_password"
+        android:padding="16dp"
+        android:textColorHint="@color/halfwhite"
+        android:fontFamily="@font/lato_bold"
+        app:layout_constraintEnd_toStartOf="@id/iv_toggle"
+         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_toggle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_visibility_off_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

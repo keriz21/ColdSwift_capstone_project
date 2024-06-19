@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBackground"
+    tools:context=".view.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/join_with_us"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/coldswift"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/regist_copywriting" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightBackground"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            tools:layout_editor_absoluteX="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/register"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="Face Verification"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_face_verification"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="KTP Verification"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_ktp_verification"
+                    android:layout_width="148dp"
+                    android:layout_height="148dp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Uncomment and add these sections if needed
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/nik"
+                    android:textSize="16sp" />
+
+                <com.bangkit.coldswiftapps.view.customview.NIKEditText
+                    android:id="@+id/ed_nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_ed"
+                    android:drawableStart="@drawable/nik"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/halfwhite"
+                    android:hint="@string/input_nik"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColorHint="@color/halfwhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/name"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_ed"
+                    android:drawableStart="@drawable/nik"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/halfwhite"
+                    android:hint="@string/input_name"
+                    android:padding="12dp"
+                    android:textColorHint="@color/halfwhite" />
+            </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/email_address"
+                    android:textSize="16sp" />
+
+                <com.bangkit.coldswiftapps.view.customview.EmailEditText
+                    android:id="@+id/ed_login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_ed"
+                    android:drawableStart="@drawable/baseline_alternate_email_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/halfwhite"
+                    android:hint="@string/input_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:textColorHint="@color/halfwhite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/password"
+                    android:textSize="16sp" />
+
+                <com.bangkit.coldswiftapps.view.customview.PassEditText
+                    android:id="@+id/ed_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_ed"
+                    android:drawableStart="@drawable/baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/halfwhite"
+                    android:hint="@string/input_password"
+                    android:padding="12dp"
+                    android:textColorHint="@color/halfwhite" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/green"
+                android:text="@string/register" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
