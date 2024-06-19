@@ -2,11 +2,24 @@
 const express = require('express');
 const sequelize = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
+const eventRoutes = require('./routes/eventRoutes');
+const Event = require('./models/event');
+const Ticket = require('./models/ticket');
+const User = require('./models/User');
 require('dotenv').config();
 
 const app = express();
 
-app.use(express.json());
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json({ limit: '30mb' }));
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
+
+Event.hasMany(Ticket, { foreignKey: 'eventId' });
+Ticket.belongsTo(Event, { foreignKey: 'eventId' });
+
+User.hasMany(Ticket, { foreignKey: 'userId' });
+Ticket.belongsTo(User, { foreignKey: 'userId' });
 
 // Tambahkan route untuk root URL
 app.get('/', (req, res) => {
@@ -14,6 +27,7 @@ app.get('/', (req, res) => {
   });
 
 app.use('/api/users', userRoutes);
+app.use('/', eventRoutes);
 
 const PORT = process.env.PORT || 5000;
 
