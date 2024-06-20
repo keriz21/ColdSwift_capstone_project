@@ -42,4 +42,14 @@ To use the application:
 
 ## Future Plan
 - **Secure Payment Gateway**: Integrated secure payment options to ensure safe transactions.
-- **Secure Payments**: Integrated payment gateway for safe and reliable transactions.
+- **Publish on Playstore** : Release the app into Playstore, so people can use the App
+
+## Contributors
+
+- Reza Ali Nirwansyah – Institut Teknologi Sepuluh Nopember - Teknik Komputer
+- Luis Ricardo Pandiangan – Universitas Udayana - Matematika
+- Ainil Warda Zebua – Universitas Kristen Immanuel - Fisika
+- Nico Syahrizal Anam – Institut Teknologi Sepuluh Nopember - Teknik Komputer
+- Mida Hasian  – Institut Teknologi Sepuluh Nopember - Teknik Komputer
+- Ro’uf Aufalin Al Ghoitsal – Universitas Negeri Semarang - Pend. Teknik Informatika dan Komputer
+- Niat Dewi Ratnasari Harefa – Universitas Kristen Immanuel - Fisika
