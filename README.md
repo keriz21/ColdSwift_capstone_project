@@ -22,7 +22,6 @@ The purpose of this application is to:
 ## Functions
 - **User Registration and Verification**: Users must register with their ID card and undergo facial recognition for verification.
 - **Ticket Purchase**: Each verified user can purchase only one ticket per event.
-- **Secure Payment Gateway**: Integrated secure payment options to ensure safe transactions.
 - **Event Listings**: Browse and search for upcoming concerts and events.
 - **Ticket Management**: View purchased tickets and event details.
 
@@ -42,4 +41,5 @@ To use the application:
 - **Ticket Management**: Simple interface to manage and view your purchased tickets.
 
 ## Future Plan
+- **Secure Payment Gateway**: Integrated secure payment options to ensure safe transactions.
 - **Secure Payments**: Integrated payment gateway for safe and reliable transactions.
