@@ -29,7 +29,7 @@ The purpose of this application is to:
 ## Usage
 To use the application:
 
-1. **Download and Install**: Download the app from the Google Play Store and install it on your Android device.
+1. **Download and Install**: Download the app and install it on your Android device.
 2. **Register**: Sign up using your personal details, including ID card verification and facial recognition.
 3. **Browse Events**: Search for the concert or event you want to attend.
 4. **Purchase Ticket**: Select the event, make a payment using the secure gateway, and purchase your ticket.
@@ -38,6 +38,8 @@ To use the application:
 ## Features
 - **One Man One Ticket**: Ensures fair ticket distribution by allowing only one ticket purchase per verified user.
 - **ID and Facial Recognition Verification**: Provides secure and unique user identification.
-- **Secure Payments**: Integrated payment gateway for safe and reliable transactions.
 - **Event Search and Listings**: Easy navigation to find and browse events.
 - **Ticket Management**: Simple interface to manage and view your purchased tickets.
+
+## Future Plan
+- **Secure Payments**: Integrated payment gateway for safe and reliable transactions.
